@@ -8,82 +8,116 @@
   <meta property="og:title" content="Bill Fugina · Software Architect">
   <meta property="og:description" content="Full stack software architect, developer and mentor.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://billfugina.com/bill-portrait.jpg">
+  <meta name="theme-color" content="#2b1530">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="hero">
-    <p class="eyebrow">Software architect · developer · mentor</p>
-    <h1>Bill Fugina</h1>
-    <p class="lede">I design and build software systems, and I help teams build them well. I've been doing it professionally for over 20 years, and I still love it.</p>
-    <nav class="links" aria-label="Elsewhere">
-      <a href="https://github.com/BillFugina">GitHub</a>
-      <a href="https://www.linkedin.com/in/billfugina/">LinkedIn</a>
-      <a href="mailto:bill@billfugina.com">Email</a>
-    </nav>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Software architect · developer · mentor</p>
+        <h1>Bill Fugina</h1>
+        <p class="lede">I design and build software systems, and I help teams build them well. I've been doing it professionally for over 20 years, and I still love it.</p>
+        <div class="actions">
+          <a class="button primary" href="mailto:bill@billfugina.com">Get in touch</a>
+          <a class="button ghost" href="https://www.linkedin.com/in/billfugina/">LinkedIn</a>
+          <a class="button ghost" href="https://github.com/BillFugina">GitHub</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <picture>
+          <source srcset="bill-portrait.webp" type="image/webp">
+          <img src="bill-portrait.jpg" width="800" height="1000" alt="Bill Fugina, smiling, in a plum plaid jacket">
+        </picture>
+      </figure>
+    </div>
   </header>
 
   <main>
     <section aria-labelledby="work">
-      <h2 id="work">What I do</h2>
-      <div class="grid">
-        <article>
+      <h2 id="work" class="section-title">What I do</h2>
+      <ol class="pillars">
+        <li>
+          <span class="num" aria-hidden="true">01</span>
           <h3>Architect</h3>
           <p>Every system bigger than a script is made of parts, and those parts have to fit. I look for the sweet spot between quick and dirty and over-engineered: clear boundaries, adapters around vendors, and designs a team can keep changing.</p>
-        </article>
-        <article>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">02</span>
           <h3>Developer</h3>
           <p>I write code every day and enjoy it. Full stack TypeScript, React, tRPC, Drizzle, Postgres and serverless on Vercel are home turf, and I'm building agent-first products with Claude and MCP.</p>
-        </article>
-        <article>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">03</span>
           <h3>Lead and mentor</h3>
           <p>I've led architecture and teams through full product rewrites. Working alongside developers who want to get better is one of the best parts of the job, and I usually learn as much as I teach.</p>
-        </article>
-      </div>
+        </li>
+      </ol>
     </section>
 
     <section aria-labelledby="apps">
-      <h2 id="apps">What I'm building</h2>
-      <div class="grid apps">
-        <article class="app">
-          <h3>tiny-bee</h3>
-          <p>An agent-first meetup planner. Each member has a private check-in with an AI agent instead of filling in forms, the app finds the fairest place to meet, and members vote by ranked choice. An MCP server lets people take part through their own agents.</p>
-          <p class="stack">React · tRPC · Drizzle · Neon · Better Auth · Vercel</p>
-          <p class="app-links">
-            <!-- TODO: put tiny-bee's live address in the first link -->
-            <a href="#">Try it</a>
-            <a href="https://github.com/BillFugina/tiny-bee">Source</a>
-          </p>
+      <h2 id="apps" class="section-title">What I'm building</h2>
+      <div class="projects">
+        <article class="project bee">
+          <div class="project-art" aria-hidden="true"><span>🐝</span></div>
+          <div class="project-body">
+            <h3>tiny-bee</h3>
+            <p>An agent-first meetup planner. Each member has a private check-in with an AI agent instead of filling in forms, the app finds the fairest place to meet, and members vote by ranked choice. An MCP server lets people take part through their own agents.</p>
+            <ul class="stack" aria-label="Built with">
+              <li>React</li><li>tRPC</li><li>Drizzle</li><li>Neon</li><li>Better Auth</li><li>Vercel</li>
+            </ul>
+            <p class="project-links">
+              <!-- TODO: put tiny-bee's live address in the first link -->
+              <a href="#">Try it <span aria-hidden="true">→</span></a>
+              <a href="https://github.com/BillFugina/tiny-bee">Source <span aria-hidden="true">→</span></a>
+            </p>
+          </div>
         </article>
-        <article class="app">
-          <h3>helpful-shepherd</h3>
-          <p>A company management app for a theatre company: productions, people and schedules in one place. In progress.</p>
-          <p class="app-links">
-            <!-- TODO: put helpful-shepherd's live address here, or remove the link until it's public -->
-            <a href="#">Try it</a>
-          </p>
+        <article class="project shepherd">
+          <div class="project-art" aria-hidden="true"><span>🎭</span></div>
+          <div class="project-body">
+            <h3>helpful-shepherd</h3>
+            <p>A company management app for a theatre company: productions, people and schedules in one place.</p>
+            <p class="status">In progress</p>
+            <p class="project-links">
+              <!-- TODO: put helpful-shepherd's live address here, or remove the link until it's public -->
+              <a href="#">Try it <span aria-hidden="true">→</span></a>
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
     <section aria-labelledby="said">
-      <h2 id="said">What people say</h2>
-      <blockquote>
-        <p>You're one of the most talented developers I've ever had the pleasure to get to work with and know. Of all the developers here you've taught me the most things. Both to have great ideas and to be brave enough to stand up for them.</p>
-        <footer>Johnathan Howell-Zobel, Site Reliability Engineer, inMotionNow</footer>
-      </blockquote>
-      <blockquote>
-        <p>Bill is one of the most diversely talented software developers I've ever worked with. His work is of consistently high quality and he has a thorough command of many different technologies.</p>
-        <footer>Michael Durling, Principal Software Engineer, Lacuna Technologies</footer>
-      </blockquote>
-      <blockquote>
-        <p>Bill is a great motivator and really promotes a workplace that encourages employees to find solutions and implement them, investing themselves in their work.</p>
-        <footer>Joshua Franklin, IT Manager, Coleman Insights</footer>
-      </blockquote>
+      <h2 id="said" class="section-title">What people say</h2>
+      <div class="quotes">
+        <blockquote>
+          <p>You're one of the most talented developers I've ever had the pleasure to get to work with and know. Of all the developers here you've taught me the most things. Both to have great ideas and to be brave enough to stand up for them.</p>
+          <footer><strong>Johnathan Howell-Zobel</strong><span>Site Reliability Engineer, inMotionNow</span></footer>
+        </blockquote>
+        <blockquote>
+          <p>Bill is one of the most diversely talented software developers I've ever worked with. His work is of consistently high quality and he has a thorough command of many different technologies.</p>
+          <footer><strong>Michael Durling</strong><span>Principal Software Engineer, Lacuna Technologies</span></footer>
+        </blockquote>
+        <blockquote>
+          <p>Bill is a great motivator and really promotes a workplace that encourages employees to find solutions and implement them, investing themselves in their work.</p>
+          <footer><strong>Joshua Franklin</strong><span>IT Manager, Coleman Insights</span></footer>
+        </blockquote>
+      </div>
     </section>
   </main>
 
   <footer class="site">
-    <p>© <span id="year">2026</span> Bill Fugina · <a href="https://dogspots.com">dogspots.com</a></p>
+    <div class="site-inner">
+      <p class="cta-title">Let's build something good.</p>
+      <p class="cta-text">I'm always happy to talk architecture, agents, or the next thing you're making.</p>
+      <a class="button light" href="mailto:bill@billfugina.com">bill@billfugina.com</a>
+      <p class="fine">© <span id="year">2026</span> Bill Fugina · <a href="https://dogspots.com">dogspots.com</a></p>
+    </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>

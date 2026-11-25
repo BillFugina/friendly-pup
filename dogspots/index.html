@@ -5,41 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DogSpots</title>
   <meta name="description" content="Bill Fugina's personal corner of the web: things he's making, and the dogs who supervise.">
+  <meta name="theme-color" content="#f6b73c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <p class="mark" aria-hidden="true">🐾</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="avatar">
+        <picture>
+          <source srcset="bill-square.webp" type="image/webp">
+          <img src="bill-square.jpg" width="480" height="480" alt="Bill Fugina">
+        </picture>
+        <span class="paw" aria-hidden="true">🐾</span>
+      </div>
       <h1>DogSpots</h1>
       <p class="lede">Hi, I'm Bill. This is my personal corner of the web, here since the late '90s. These days it's mostly a place to show off the things I'm making in my spare time.</p>
-    </header>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c120 26 240 39 360 39S600 66 720 40s240-39 360-39 240 13 360 39v40H0z"/></svg>
+  </header>
 
-    <!-- TODO: optional photo, e.g. <img src="dog.jpg" alt="..."> -->
-
+  <main>
     <section aria-labelledby="making">
       <h2 id="making">Things I'm making</h2>
       <ul class="cards">
-        <li>
-          <!-- TODO: tiny-bee's live address -->
-          <a href="#"><strong>tiny-bee</strong></a>
-          <span>Plan a meetup with friends without the group-chat chaos. It finds the fairest place to meet and lets everyone vote.</span>
+        <li class="card bee">
+          <span class="icon" aria-hidden="true">🐝</span>
+          <div>
+            <h3>tiny-bee</h3>
+            <p>Plan a meetup with friends without the group-chat chaos. It finds the fairest place to meet and lets everyone vote.</p>
+            <!-- TODO: tiny-bee's live address -->
+            <a class="go" href="#">Try tiny-bee <span aria-hidden="true">→</span></a>
+          </div>
         </li>
-        <li>
-          <!-- TODO: helpful-shepherd's live address -->
-          <a href="#"><strong>helpful-shepherd</strong></a>
-          <span>Keeping a theatre company's productions, people and schedules in one place. In progress.</span>
+        <li class="card shepherd">
+          <span class="icon" aria-hidden="true">🎭</span>
+          <div>
+            <h3>helpful-shepherd <span class="tag">In progress</span></h3>
+            <p>Keeping a theatre company's productions, people and schedules in one place.</p>
+            <!-- TODO: helpful-shepherd's live address -->
+            <a class="go" href="#">Take a look <span aria-hidden="true">→</span></a>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section aria-labelledby="work">
+    <section class="work" aria-labelledby="work">
       <h2 id="work">The work side</h2>
-      <p>For my professional background, see <a href="https://billfugina.com">billfugina.com</a>.</p>
+      <p>I'm a software architect by day. For my professional background, head over to <a href="https://billfugina.com">billfugina.com</a>.</p>
     </section>
   </main>
+
   <footer>
-    <p>© <span id="year">2026</span> DogSpots.com</p>
+    <p><span aria-hidden="true">🐾</span> © <span id="year">2026</span> DogSpots.com</p>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
