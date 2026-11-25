@@ -1,0 +1,39 @@
+:root {
+  --bg: #fff8ee;
+  --card: #ffffff;
+  --text: #2b2118;
+  --muted: #6e5f50;
+  --accent: #c2571a;
+  --border: #f0e2cf;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1511;
+    --card: #241d17;
+    --text: #f6ece0;
+    --muted: #bba995;
+    --accent: #f08a4b;
+    --border: #3a2f25;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--accent); }
+main, footer { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+header { padding: 80px 0 24px; text-align: center; }
+.mark { font-size: 48px; margin: 0; }
+h1 { font-size: clamp(40px, 8vw, 56px); margin: 4px 0 12px; letter-spacing: -.01em; }
+.lede { color: var(--muted); font-size: 19px; margin: 0; }
+section { padding: 28px 0; }
+h2 { font-size: 22px; margin: 0 0 14px; }
+.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.cards li { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; display: grid; gap: 4px; }
+.cards strong { font-size: 18px; }
+.cards span { color: var(--muted); }
+footer { padding: 24px 20px 48px; color: var(--muted); font-size: 15px; text-align: center; }

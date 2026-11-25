@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bill Fugina · Software Architect</title>
+  <meta name="description" content="Bill Fugina is a full stack software architect with more than 20 years of experience designing and building software, and leading the teams that build it.">
+  <meta property="og:title" content="Bill Fugina · Software Architect">
+  <meta property="og:description" content="Full stack software architect, developer and mentor.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">Software architect · developer · mentor</p>
+    <h1>Bill Fugina</h1>
+    <p class="lede">I design and build software systems, and I help teams build them well. I've been doing it professionally for over 20 years, and I still love it.</p>
+    <nav class="links" aria-label="Elsewhere">
+      <a href="https://github.com/BillFugina">GitHub</a>
+      <a href="https://www.linkedin.com/in/billfugina/">LinkedIn</a>
+      <a href="mailto:bill@billfugina.com">Email</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="work">
+      <h2 id="work">What I do</h2>
+      <div class="grid">
+        <article>
+          <h3>Architect</h3>
+          <p>Every system bigger than a script is made of parts, and those parts have to fit. I look for the sweet spot between quick and dirty and over-engineered: clear boundaries, adapters around vendors, and designs a team can keep changing.</p>
+        </article>
+        <article>
+          <h3>Developer</h3>
+          <p>I write code every day and enjoy it. Full stack TypeScript, React, tRPC, Drizzle, Postgres and serverless on Vercel are home turf, and I'm building agent-first products with Claude and MCP.</p>
+        </article>
+        <article>
+          <h3>Lead and mentor</h3>
+          <p>I've led architecture and teams through full product rewrites. Working alongside developers who want to get better is one of the best parts of the job, and I usually learn as much as I teach.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="apps">
+      <h2 id="apps">What I'm building</h2>
+      <div class="grid apps">
+        <article class="app">
+          <h3>tiny-bee</h3>
+          <p>An agent-first meetup planner. Each member has a private check-in with an AI agent instead of filling in forms, the app finds the fairest place to meet, and members vote by ranked choice. An MCP server lets people take part through their own agents.</p>
+          <p class="stack">React · tRPC · Drizzle · Neon · Better Auth · Vercel</p>
+          <p class="app-links">
+            <!-- TODO: put tiny-bee's live address in the first link -->
+            <a href="#">Try it</a>
+            <a href="https://github.com/BillFugina/tiny-bee">Source</a>
+          </p>
+        </article>
+        <article class="app">
+          <h3>helpful-shepherd</h3>
+          <p>A company management app for a theatre company: productions, people and schedules in one place. In progress.</p>
+          <p class="app-links">
+            <!-- TODO: put helpful-shepherd's live address here, or remove the link until it's public -->
+            <a href="#">Try it</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="said">
+      <h2 id="said">What people say</h2>
+      <blockquote>
+        <p>You're one of the most talented developers I've ever had the pleasure to get to work with and know. Of all the developers here you've taught me the most things. Both to have great ideas and to be brave enough to stand up for them.</p>
+        <footer>Johnathan Howell-Zobel, Site Reliability Engineer, inMotionNow</footer>
+      </blockquote>
+      <blockquote>
+        <p>Bill is one of the most diversely talented software developers I've ever worked with. His work is of consistently high quality and he has a thorough command of many different technologies.</p>
+        <footer>Michael Durling, Principal Software Engineer, Lacuna Technologies</footer>
+      </blockquote>
+      <blockquote>
+        <p>Bill is a great motivator and really promotes a workplace that encourages employees to find solutions and implement them, investing themselves in their work.</p>
+        <footer>Joshua Franklin, IT Manager, Coleman Insights</footer>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="site">
+    <p>© <span id="year">2026</span> Bill Fugina · <a href="https://dogspots.com">dogspots.com</a></p>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

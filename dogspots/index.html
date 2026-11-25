@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DogSpots</title>
+  <meta name="description" content="Bill Fugina's personal corner of the web: things he's making, and the dogs who supervise.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="mark" aria-hidden="true">🐾</p>
+      <h1>DogSpots</h1>
+      <p class="lede">Hi, I'm Bill. This is my personal corner of the web, here since the late '90s. These days it's mostly a place to show off the things I'm making in my spare time.</p>
+    </header>
+
+    <!-- TODO: optional photo, e.g. <img src="dog.jpg" alt="..."> -->
+
+    <section aria-labelledby="making">
+      <h2 id="making">Things I'm making</h2>
+      <ul class="cards">
+        <li>
+          <!-- TODO: tiny-bee's live address -->
+          <a href="#"><strong>tiny-bee</strong></a>
+          <span>Plan a meetup with friends without the group-chat chaos. It finds the fairest place to meet and lets everyone vote.</span>
+        </li>
+        <li>
+          <!-- TODO: helpful-shepherd's live address -->
+          <a href="#"><strong>helpful-shepherd</strong></a>
+          <span>Keeping a theatre company's productions, people and schedules in one place. In progress.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="work">
+      <h2 id="work">The work side</h2>
+      <p>For my professional background, see <a href="https://billfugina.com">billfugina.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="year">2026</span> DogSpots.com</p>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
